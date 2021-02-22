@@ -1,0 +1,1 @@
+pyinstaller -F -i "D:\project\My project\проект\иконка.ico" --noconsole equations код.py
