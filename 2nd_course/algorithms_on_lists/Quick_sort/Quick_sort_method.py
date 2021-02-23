@@ -1,4 +1,4 @@
-# Быстрая сортировка Quick Sort
+# Быстрая сортировка Quick Sort методом
 def qsort(a, startElement, endElement):
     # Если левая граница больше правой,
     # то прерываем метод с помощью return
