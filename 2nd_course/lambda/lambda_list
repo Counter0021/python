@@ -1,0 +1,16 @@
+# Коллекция lambda - функций список
+a = [(lambda i, j: i + j), (lambda i, j: i - j), (lambda i: i // 2)]
+print(a[0](1, 4))
+print(a[1](1, 4))
+print(a[2](10))
+
+# Коллекция lambda - функций словарь
+b = {"+": (lambda i, j: i + j), "-": (lambda i, j: i - j)}
+print(b["+"](1098, 325))
+print(b["-"](100, 50))
+
+# Сортировка с lambda
+c = [[1, 10], [0, 15], [-1, 12], [3, 9]]
+print(c)
+c.sort(key=lambda i: i[1])
+print(c)
