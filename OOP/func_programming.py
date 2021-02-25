@@ -20,6 +20,7 @@ for f in f1, f2, f3:
     print(y)
 
 A = (1, 2, 3, 4, 5)
+# Генератор map
 C = map(f1, A)
 for y in C:
     print(y)
