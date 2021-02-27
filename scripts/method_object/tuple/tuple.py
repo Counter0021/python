@@ -26,9 +26,9 @@ person = ("Arkady", "Counter", 18)
 name, surname, age = person
 print(name, surname, age)
 
-# Количество определённых элементов .count
+# Количество определённых элементов .count()
 tuple_1 = (1, 2, 3, 1, 6)
 print(tuple_1.count(1))
 
-# Метод вычисления индекса .index
+# Метод вычисления индекса .index()
 print(tuple_1.index(6))
