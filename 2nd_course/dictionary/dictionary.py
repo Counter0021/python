@@ -80,3 +80,7 @@ print(nums)
 # Добавление словаря в другой словарь .update()
 nums.update({6: "six", 7: "seven"})
 print(nums)
+
+# Удалить элемент
+del nums[1]
+print(nums)
