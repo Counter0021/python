@@ -29,6 +29,8 @@ mazda.drive("London")
 class Circle:
     pi = 3.14
 
+    # Параметр по умолчанию
+    # radius = default param
     def __init__(self, radius=1):
         self.radius = radius
         # Можно вычислять сразу аналог методу get_circumference()
