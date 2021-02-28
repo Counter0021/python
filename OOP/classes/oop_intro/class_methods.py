@@ -8,7 +8,7 @@ class Gamer:
         return Gamer.active_gamers
 
     # Заполнение игрока из строки с данными
-    # При помози cls можно создавать объекты, как в __init__()
+    # При помощи cls можно создавать объекты, как в __init__()
     @classmethod
     def gamer_from_string(cls, data_string):
         nickname, age, level, points = data_string.split(" ")
