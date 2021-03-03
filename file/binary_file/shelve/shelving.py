@@ -3,6 +3,7 @@ import shelve
 # Записывает словарь, он хранится в файле, не в памяте
 # Ключи обязательно строки!
 # Если записали, то значение уже сохранено!
+# База данных
 with shelve.open('shelve_test') as cars:
     cars['opel'] = 'Germany'
     cars['ford'] = 'USA'
