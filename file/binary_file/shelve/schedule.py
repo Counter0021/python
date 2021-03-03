@@ -1,7 +1,7 @@
 # Небезопасно может быть
 import shelve
 
-# Расписание по неделе дня
+# Расписание по дням недели
 monday = ['Math', 'Eng', 'System programming', 'Python']
 tuesday = ['Eng', 'HTML', 'Python', 'PE']
 wednesday = ['Physics', 'Eng', 'Python']
