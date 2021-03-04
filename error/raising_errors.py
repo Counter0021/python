@@ -7,7 +7,6 @@
 # raise ValueError('Invalid value')
 
 def get_rainbow_color(color_num):
-
     '''
     :param color_num: Color number must be integer type
     and Color number must be in range of integer from 1 to 7
@@ -39,6 +38,7 @@ def get_rainbow_color(color_num):
 
 color = get_rainbow_color(4)
 print(color)
+
 
 def colorize_text(color_num, text):
     color_num_list = [1, 2, 3, 4, 5, 6, 7]
