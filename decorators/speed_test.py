@@ -35,6 +35,7 @@ def product(ranges):
         res *= i
     return res
 
+
 if __name__ == '__main__':
     x = sum_with_list()
     y = sum_with_generator()
