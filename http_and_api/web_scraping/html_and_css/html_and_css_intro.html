@@ -1,5 +1,62 @@
-Web Development
+<!--Тип документа именно html-->
+<!--Теги - <тег>-->
+<!DOCTYPE html>
+<!--Всё находится, вся вебстраница, обязательно закрывать-->
+<html lang="en">
+<!--Атрибуты, обязательно закрывать-->
+<head>
+    <meta charset="UTF-8">
 
-1. HTML
-2. CSS
-3. JavaScript
+    <!--Заголовок страницы-->
+    <title>Web Development Page</title>
+
+    <!--Лучше в отдельном файле делать CSS-->
+    <!--h1 - селектор-->
+    <!--# - стиль для id-->
+    <!--. - стиль для класса-->
+    <style type="text/css">
+
+        h1{
+            color: white;
+            background: red;
+        }
+
+        li{
+            color: red;
+        }
+
+        #css-li{
+            color: blue;
+        }
+
+        .green{
+            color: green;
+        }
+
+    </style>
+</head>
+<!--Располагается весь контент, обязательно закрывать-->
+<body>
+    <!--Заголовок. Индекс - размер заголовка(1 - самый большой)-->
+    <h1>Web Development</h1>
+    <h1 class="green">Web</h1>
+    <h3>Programming Languages</h3>
+
+    <!--Упорядоченный список-->
+    <ol>
+        <!--Элементы этого списка, сам нумеруется-->
+        <!--id - употребляется только к 1 элементу-->
+        <!--class - к нескольким-->
+        <li>HTML</li>
+        <li id="css-li">CSS</li>
+        <li class="green">JavaScript</li>
+        <li class="green">Python</li>
+    </ol>
+
+    <!--параграф(абзац), обязательно закрывать-->
+    <p>1. HTML</p>
+    <p>2. CSS</p>
+    <p>3. JavaScript</p>
+    <p>4. Python</p>
+</body>
+</html>
