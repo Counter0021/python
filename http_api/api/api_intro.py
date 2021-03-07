@@ -2,7 +2,7 @@
 # Легальный способ брать данные с других сайтов для расположения на своём сайте
 # json - формат передачи данных(похожи на словарь)
 # Основной сайт https://earthquake.usgs.gov/fdsnws/event/1/
-# Указываем метод(query(запрос данных) https://earthquake.usgs.gov/fdsnws/event/1/query?
+# Указываем метод(query?(запрос данных) https://earthquake.usgs.gov/fdsnws/event/1/query?
 # Параметры
 # Пары ключ и значение, разделённые знаком &
 # format=geojson& - данный в формате (json)
