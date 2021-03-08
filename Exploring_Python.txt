@@ -1,5 +1,26 @@
-Плейлист для изучения Python(pycharm) и Github:
+Плейлист для изучения PyCharm и Github:
     https://www.youtube.com/playlist?list=PLWZhPHTrxvZH7dh3cwdCadbf7BHkNpm17
 
 Лекции об ООП:
     https://www.youtube.com/playlist?list=PLRDzFCPr95fIgPrFFW-0nXT5YH6ZnjRM6
+
+Текст лекций:
+    https://github.com/tkhirianov/pydatan
+
+API бесплатные:
+    https://github.com/public-apis/public-apis
+
+JSON форматор:
+    https://jsonformatter.curiousconcept.com/#
+
+Python docs:
+    https://docs.python.org/3/
+
+Информация о библиотеках:
+    https://pypi.org/search/
+
+Курс по python:
+    https://www.udemy.com/course/python-python-3/
+
+Курс HTML и CSS:
+    https://www.udemy.com/course/html5-oz/
