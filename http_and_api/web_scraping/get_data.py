@@ -59,20 +59,20 @@ parsed_html = BeautifulSoup(html_string, 'html.parser')
 html_element = parsed_html.select("li")[3]
 
 # Получить текст из html элемента
-# print(html_element.get_text())
-#
-# html_element_list = parsed_html.select("li")
-# for i in html_element_list:
-#     print(i.get_text())
+print(html_element.get_text())
+
+html_element_list = parsed_html.select("li")
+for i in html_element_list:
+    print(i.get_text())
 
 # Получить текст из html класса
-# class_element_list = parsed_html.select(".green")
-# for i in class_element_list:
-#     print(i.get_text())
+class_element_list = parsed_html.select(".green")
+for i in class_element_list:
+    print(i.get_text())
 
 # Название элемента
-# for i in class_element_list:
-#     print(i.name)
+for i in class_element_list:
+    print(i.name)
 
 # Атрибуты элемента
 html_element_arg = parsed_html.select("li")
