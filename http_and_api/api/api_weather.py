@@ -6,7 +6,7 @@ apiKey = 'a1f7055ff16b4670ad4f977de4b28fdb'
 print('Please write only in English! If there are no values, the default values will be used.')
 language = input('Enter language(first 2 letter) or default language - english: ').lower()
 city = input('Enter city: ').lower() or 'krasnodar'
-country = input('Enter country: ').lower() or 'russia'
+country = input('Enter country: ').lower()
 
 response = requests.get(url, headers={'Accept': 'application/json'}, params={
     'key': apiKey,
