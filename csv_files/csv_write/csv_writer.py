@@ -5,6 +5,7 @@ import csv
 with open('students.csv', 'w') as file:
     csv_writer = csv.writer(file)
     # writerow() - запись
+    # Ввиде списка
     csv_writer.writerow(['Name', 'Surname', 'Age'])
     csv_writer.writerow(['Arkady', 'Counter', '25'])
     csv_writer.writerow(['Daniil', 'Krost', 20])
