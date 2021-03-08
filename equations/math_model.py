@@ -1,21 +1,23 @@
 import random
-import  math
+import math
 
-count = 0 #количество решенных примеров
-right = 0 #Количество правильных ответов
-score = 0 #очки
-discri = False #Дискриминант
+count = 0  # количество решенных примеров
+right = 0  # Количество правильных ответов
+score = 0  # очки
+discri = False  # Дискриминант
+
 
 # Основное тело функции проверки на число
 def is_digit(string):
     if string.isdigit():
-       return True
+        return True
     else:
         try:
             float(string)
             return True
         except ValueError:
             return False
+
 
 # Генерация корней
 def randoms():
@@ -24,13 +26,12 @@ def randoms():
     x2 = 0
     while not (x1 != 0):
         x1 = random.randint(-10, 10)
-        #print(x1)
     while not (x2 != 0):
         x2 = random.randint(-10, 10)
-        #print(x2)
     a = 0
     while not (a != 0):
         a = random.randint(-10, 10)
+
 
 # Генерация корней, цикл на проверку чтобы x1 != -x2
 def randomsX1minX2():
@@ -40,16 +41,15 @@ def randomsX1minX2():
     while (a == 1):
         randoms()
 
+
 # Вычисление коэффициентов для полных квадратных уравнений
 def bac():
-    global b,c, a
+    global b, c, a
     b = (x1 + x2) * -1 * a
     c = x1 * x2 * a
 
 
-    #print(x1, x2)
-
-def discr():                               #Дискриминант
+def discr():  # Дискриминант
     global D, x1, x2, a, b, c
     D = b * b - 4 * a * c
     Dis = math.sqrt(D)
@@ -58,13 +58,14 @@ def discr():                               #Дискриминант
     print(f"""Дикриминант: ",Dis)
 x1 = ({-b} + {Dis}) / (2 * {a})
 x2 = ({-b} - {Dis}) / (2 * {a})""")
-    print(x1,x2)
+    print(x1, x2)
 
-#Проверка ввода число
+
+# Проверка ввода число
 def proverka():
     global right, score, discri, count
     x33 = False
-    while(x33 != True):
+    while (x33 != True):
         x3 = input("x1 =")
         x33 = is_digit(x3)
 
@@ -86,10 +87,12 @@ def proverka():
         score -= 20
     count += 1
 
-#Вывод с дискриминантом
+
+# Вывод с дискриминантом
 def proverkaDiscriminanta():
     if (discri == True):
         discr()
+
 
 # Подсказки
 def podscazka1():
@@ -106,6 +109,7 @@ x = 0 v ax+b = 0
             x = 8
 Ответ: x1 = 0, x2 = 8""")
 
+
 def podscazka2():
     print("""2 - ax^2 + c = 0
 x^2 = -c / a
@@ -118,12 +122,14 @@ x = √-c/a
     x = ±3
 Ответ: x1 = 3, x2 = -3""")
 
+
 def podscazka3():
     print("""3 - ax^2 = 0
 Пример:
     10x^2 = 0
     x = 0
 Ответ: x = 0""")
+
 
 def podscazka4():
     print("""4 - x^2 + bx + c = 0
@@ -134,6 +140,7 @@ def podscazka4():
     {x1 + x2 = -3   {x1 = -4
     {x1 * x2 = -4   {x2 = 1
 Ответ: x1 = -4, x2 = 1""")
+
 
 def podscazka5():
     print("""5 - ax^2 + bx + c = 0
@@ -149,6 +156,7 @@ x2 = (-b + √D) / (2a)
     x2 = (54 + 42) / 12 = 8
 Ответ: x1 = 1, x2 = 8""")
 
+
 # *************************************************************
 #                   Функции уранений
 # *************************************************************
@@ -163,14 +171,13 @@ def form1():
 
     b = x2 * a * -1
 
-    print(x1, x2)
-
     if (b < 0):
         print(f"{a} x^2  {b} x = 0")
     else:
         print(f"{a} x^2 + {b} x = 0")
 
     proverka()
+
 
 # 2 - ax^2 + c = 0
 def form2():
@@ -182,8 +189,6 @@ def form2():
     xv2 = x ** 2
     c = (xv2 * -1 * a)
 
-    print(x,x2)
-
     if (c != 0):
         if (c > 0):
             print(f"{a}x^2 + {c} = 0")
@@ -191,6 +196,7 @@ def form2():
             print(f"{a}x^2 {c} = 0")
 
     proverka()
+
 
 # 3 - ax^2 = 0
 def form3():
@@ -202,6 +208,7 @@ def form3():
     print(f"{a} x^2 = 0")
 
     proverka()
+
 
 # 4 - x^2 + bx + c = 0
 def form4():
@@ -222,6 +229,7 @@ def form4():
 
     proverka()
 
+
 # 5 - ax^2 + bx + c = 0
 def form5():
     global right, score
@@ -239,6 +247,7 @@ def form5():
         print(f"{a}x^2 + {b}x {c} = 0")
 
     proverka()
+
 
 # Подсказка выбор
 def form6():
@@ -260,7 +269,8 @@ def form6():
     }
     centr()
 
-def form7():                                    #Показать статистику
+
+def form7():  # Показать статистику
     print(f"""Ваше количество очков: {score}
 Количество правильных решений: {right}
 Количество примеров: {count}""")
@@ -278,24 +288,27 @@ print("""Здравствуйте!
 6 - Подсказки, если не знаешь как решать(они с примерами)
 7 - Статистика игры""")
 
+
 # Главный метод
 def main():
     while True:
         global g
         # Запрашиваем переменную для ввода режима
         g = input("Введите режим, Для выхода введите s: ")
-        execute (g, dictOfCommands)
+        execute(g, dictOfCommands)
+
 
 dictOfCommands = {
-        '1': form1,
-        '2': form2,
-        '3': form3,
-        '4': form4,
-        '5': form5,
-        '6': form6,
-        '7': form7,
-        's': exit
+    '1': form1,
+    '2': form2,
+    '3': form3,
+    '4': form4,
+    '5': form5,
+    '6': form6,
+    '7': form7,
+    's': exit
 }
+
 
 # Проверка: "есть-ли выбранная команда в словаре list?"
 def execute(command, list):
@@ -303,6 +316,7 @@ def execute(command, list):
         list[command]()
     except KeyError:
         print('Неизвестная команда, пробуй еще раз')
+
 
 # Запуск основного тела программы
 main()
