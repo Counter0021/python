@@ -8,7 +8,7 @@ conn = sqlite3.connect('students_db.db')
 cursor = conn.cursor()
 
 # Создать таблицу
-cursor.execute('CREATE TABLE students (name Text, surname Text, age Integer);')
+cursor.execute('CREATE TABLE students (name Text, last_name Text, age Integer);')
 
 # Сохранить изменения в базе данных
 conn.commit()
