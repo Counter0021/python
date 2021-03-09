@@ -17,12 +17,12 @@ a._private()
 # атрибут становится недоступным по этому имени.
 
 class B:
-    def ___private(self):
+    def __private(self):
         print('This is a private method!')
 
 
 b = B()
-# b.___private()
+# b.__private()
 
 # Обход ????????????????????????
 # b._B__private()
