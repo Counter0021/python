@@ -104,7 +104,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
-sqlite/
+sqlite_file/
 env/
 venv/
 ENV/
