@@ -14,17 +14,49 @@
 --	age INTEGER
 --
 --);
---
-----Сделать запрос всех данных
---SELECT * FROM students;
 
---Поместить данные в таблицы
+
+--CRUD - Создать, считать, редактировать и удалить.
+
+--Поместить данные в таблицы (Создать)
+INSERT INTO employees (name, surname, age) VALUES ('Arkady', 'Counter', 25);
+INSERT INTO employees (name, surname, age) VALUES ('Daniil', 'Krost', 20);
+INSERT INTO employees (name, surname, age) VALUES ('Jack', 'Black', 25);
+INSERT INTO employees (name, surname, age) VALUES ('Jane', 'White', 20);
 INSERT INTO employees (name, surname, age) VALUES ('Arkady', 'Counter', 25);
 INSERT INTO employees (name, surname, age) VALUES ('Daniil', 'Krost', 20);
 INSERT INTO employees (name, surname, age) VALUES ('Jack', 'Black', 25);
 INSERT INTO employees (name, surname, age) VALUES ('Jane', 'White', 20);
 
 --Удалить таблицу
---DROP TABLE emloyees
+--DROP TABLE emloyees;
 
 --.read - считать инфу из файла
+----Сделать запрос всех данных
+--SELECT * FROM employees;
+-- * - все столбцы
+
+--SELECT name FROM employees;
+--SELECT name, age FROM employees;
+
+--Выбрать записи с условиями = или is
+--SELECT name, age FROM employees WHERE name = 'Arkady';
+--SELECT name, age FROM employees WHERE name is 'Arkady';
+
+--Условие нет
+--SELECT name, age FROM employees WHERE name is not 'Daniil';
+
+--Условие и
+--SELECT name, age FROM employees WHERE name is not 'Daniil' and age is not 20;
+--SELECT name, age FROM employees WHERE age < 18;
+
+--% - любое количество любых символов
+--Условие в начале
+--SELECT name, age FROM employees WHERE name LIKE 'Ar%';
+
+--Условие в конце
+--Условие или
+--SELECT * FROM employees WHERE name LIKE '%t' or surname LIKE '%t';
+
+--Условие посередине
+--SELECT * FROM employees WHERE name LIKE '%i%';
