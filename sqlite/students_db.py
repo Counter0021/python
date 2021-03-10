@@ -8,7 +8,7 @@ conn = sqlite3.connect('students_db.db')
 cursor = conn.cursor()
 
 # Поместить в курсор
-cursor.execute('Запрос')
+# cursor.execute('Запрос')
 
 # ===============================================
 #               Создать таблицу
