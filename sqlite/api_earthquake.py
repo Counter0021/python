@@ -68,11 +68,9 @@ data_list = []
 
 # Цикл записи в db
 for i in range(len(data['features'])):
-    data_list.append([])
     place = data['features'][i]['properties']['place']
     magnitude = data['features'][i]['properties']['mag']
-    data_list[i].append(place)
-    data_list[i].append(magnitude)
+    data_list.append([place, magnitude])
 
 question = input('Enter YES if you want to store the data in the database, or leave it blank if you don\'t: ').upper()
 if question == "YES":
