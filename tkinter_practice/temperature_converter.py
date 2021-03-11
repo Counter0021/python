@@ -5,6 +5,7 @@ from tkinter import *
 root = Tk()
 
 
+# Перевод из цельсия в фаренгейт
 def convertor():
     celsius_res = int(entry_celsius.get())
     fahrenheit = (celsius_res * 9 / 5) + 32
