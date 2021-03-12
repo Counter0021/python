@@ -11,13 +11,13 @@ def print_time_in_timezone(tz):
     for i in range(len(timezon)):
         # Для упрощения
         timezone_in_country = datetime.datetime.now(tz=pytz.timezone(timezon[i]))
-        # Вывод страны, таймзоны и времени там (часы и минуты)
+        # Вывод страны, таймзоны и времени
         print(
             f"Time in the {pytz.country_names[tz]} of the in the time zone {timezon[i].replace('/', ' ')} "
-            f"now: {timezone_in_country.hour}:{timezone_in_country.minute}")
+            f"now: {timezone_in_country.strftime(iso_format_string)}")
     # Вывод UTC времени
-    utc_time = datetime.datetime.utcnow().time()
-    print(f"UTC time is {utc_time.hour}:{utc_time.minute}")
+    utc_time = datetime.datetime.utcnow()
+    print(f"UTC time is {utc_time.strftime(iso_format_string)}")
 
 
 # Вывод всех таймзон по странам
@@ -61,6 +61,8 @@ def main():
 timezones_input = None
 # Программа работает
 playProgram = True
+# Формат строка
+iso_format_string = '%H:%M:%S %d-%m-%Y'
 
 # Запуск программы
 if __name__ == '__main__':
