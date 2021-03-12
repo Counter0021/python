@@ -2,10 +2,12 @@ from django.shortcuts import render
 from collections import Counter
 
 
+# Домашняя страница
 def home(request):
     return render(request, 'home.html')
 
 
+# Буквы наоборот
 def reverse(request):
     user_text = request.GET['usertext']
     elements = Counter(user_text.split(' '))
