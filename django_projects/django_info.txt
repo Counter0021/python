@@ -1,0 +1,5 @@
+Создать проект - django-admin startproject my_first_project
+
+Запустить сервер с проектом - python manage.py runserver
+
+Вырубить сервер с проектом -  CTRL-BREAK (на клавиатуре справа с верху, рядом с PRINT_SCREEN и Scroll_lock
