@@ -24,3 +24,20 @@ Python docs:
 
 Курс HTML и CSS:
     https://www.udemy.com/course/html5-oz/
+
+Курс Django, python, html и CSS:
+    https://www.udemy.com/course/python-pythondjango/
+
+Курс по DataScience:
+    https://www.udemy.com/course/data-science-python-3/
+
+Цвет в кодах (расширение Chrome):
+    https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp
+
+SQLite:
+    https://www.sqlite.org/index.html
+
+    https://www.w3schools.com/sql/
+
+Html и CSS информация:
+    https://developer.mozilla.org/ru/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5
