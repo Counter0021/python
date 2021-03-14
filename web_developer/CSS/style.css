@@ -1,0 +1,10 @@
+.blue_with_border {
+	background: blue;
+	border-color: indigo;
+	border-style: dashed;
+}
+
+#second_paragraph {
+	background: red;
+	color: yellow;
+}
