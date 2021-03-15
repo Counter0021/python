@@ -1,10 +1,76 @@
+/*float - расположение (последовательное движение друг за другом)*/
+
 .blue_with_border {
 	background: blue;
-	border-color: indigo;
+	color: white;
+	border-color: white;
 	border-style: dashed;
+	width: 200px;
+	height: 100px;
+	
+	/*Текст во 2 параграфе виден на 1 параграфе (0-1)*/
+	opacity: 0.7;
+
+	/*Абсолютная позиция (координаты от предка с левого угла)*/
+	/*position: absolute;*/
+	top: 100px;
+	left: 300px;
+
+	/*Фиксированная позиция застыть параграфу на точке*/
+	position: fixed;
+
+	/*Позиция относительна (хотим 2 параграф оставить на месте)*/
+	/*position: relative;
+	top: 50px;
+	left: 100px;*/
+
+	/*Параграф 1 сверху*/
+	z-index: 2;
+
+	/*Короткая запись(верхнее, правое, нижнее, левое(по часовой стрелке))*/
+	/*margin: 50px 100px 150px 30px;*/
+
+	/*Если нужно попарам*/
+	/*margin: 300px 100px;*/
+	/*width: 50%;
+	margin: 300px auto;*/
+
+	/*margin-bottom: 200px;
+	padding: 20px 50px 10px 40px;*/
+
+	/*float: left;*/
 }
 
 #second_paragraph {
 	background: red;
 	color: yellow;
+	width: 200px;
+	height: 10000px;
+
+	/*position: relative;*/
+	position: absolute;
+
+	z-index: 1;
+
+	/*Поля одинаковые*/
+	/*margin: 50px;*/
+
+	/*Разные поля*/
+	/*margin-left: 30px;*/
+	/*margin-right: 100px;*/
+	/*Верхнее*/
+	/*margin-top: 50px;*/
+	/*Нижнее*/
+	/*margin-bottom: 150px;*/
+
+	/*margin-bottom: 200px;*/
+	/*Границы контента*/
+	/*padding: 20px 50px 10px 40px;*/
+
+	/*float: right;*/
 }
+
+/*Расположить ниже*/
+/*.clearFloat {
+	clear: both;
+}*/

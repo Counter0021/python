@@ -1,0 +1,14 @@
+#green {
+	background: green;
+	float: left;
+}
+
+#blue {
+	background: blue;
+	float: right;
+}
+
+#red {
+	background: red;
+	clear: both;
+}

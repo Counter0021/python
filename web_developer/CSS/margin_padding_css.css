@@ -1,0 +1,17 @@
+div {
+/*	margin-left: 200px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	margin-top: 55px;*/
+
+	/*margin: 55px 100px 50px 200px;*/
+}
+
+p {
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+
+	padding: 20px 30px 40px 50px;
+}

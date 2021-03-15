@@ -1,0 +1,36 @@
+/*Для всех элементов(*) */
+
+/*Ко всем элементам div*/
+#my_div * {
+	border: 2px solid green;
+}
+
+.my_class * {
+	border: 2px dotted blue;
+}
+
+/*К потомку*/
+li a {
+	background: yellow;
+}
+
+/*Соседство*/
+h3 + ul {
+	color: red;
+}
+
+/*По атрибуту*/
+a[href="https://www.google.com"] {
+	background: green;
+}
+
+/*Порядковый номер элемента на странице*/
+ul:nth-of-type(2) {
+	background: gray;
+	color: white;
+}
+
+p:nth-of-type(4) {
+	background: black;
+	color: white;
+}

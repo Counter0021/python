@@ -1,0 +1,13 @@
+#green {
+	background: green;
+	position: absolute;
+	top: 100px;
+	z-index: 2
+}
+
+#red {
+	background: red;
+	position: relative;
+	top: 100px;
+	z-index: 0
+}

@@ -41,3 +41,6 @@ SQLite:
 
 Html и CSS информация:
     https://developer.mozilla.org/ru/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5
+
+Шрифты для CSS (google):
+    https://fonts.google.com/specimen/Charm?preview.text_type=custom
