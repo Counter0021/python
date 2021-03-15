@@ -24,3 +24,12 @@ TEMPLATES:
 
 Создать приложение
 	python manage.py startapp
+
+Приминить миграцию для приложений:
+	python manage.py migrate
+
+Создать миграцию новых файлов:
+	python manage.py makemigrations
+
+Создать админку:
+	python manage.py createsuperuser
