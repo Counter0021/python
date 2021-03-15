@@ -44,3 +44,6 @@ Html и CSS информация:
 
 Шрифты для CSS (google):
     https://fonts.google.com/specimen/Charm?preview.text_type=custom
+
+Размеры шрифта CSS:
+    https://developer.mozilla.org/ru/docs/Web/CSS/font-size
