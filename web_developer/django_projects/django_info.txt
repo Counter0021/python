@@ -21,3 +21,6 @@ TEMPLATES:
 
 Конструктор Web сайтов
     https://whimsical.com/my-boards-JZL4dD4iRTDGf7XgdD32SV
+
+Создать приложение
+	python manage.py startapp
